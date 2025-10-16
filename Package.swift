@@ -25,19 +25,27 @@ let package = Package(
       targets: ["PubMaticAdapterTarget"]
     )
   ],
+  dependencies: [
+    .package(
+      name: "PubMaticSDK",
+      url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git",
+      exact: "4.9.0"
+    )
+  ],
   targets: [
     .target(
       name: "PubMaticAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "PubMaticAdapter"),
+        product(name: "PubMaticSDK", package: "PubMaticSDK"),
       ],
       path: "PubMaticAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "PubMaticAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-4.8.0.0.zip",
-      checksum: ""
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-4.9.0.0.zip",
+      checksum: "13ee68174d33a57312838d3596ff9cf95e5b41e099ad32bb33ab113fe3a80c53"
     ),
   ]
 )
