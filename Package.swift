@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -27,9 +27,8 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      name: "PubMaticSDK",
       url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git",
-      exact: "4.9.0"
+      exact: "4.10.0"
     )
   ],
   targets: [
@@ -37,15 +36,15 @@ let package = Package(
       name: "PubMaticAdapterTarget",
       dependencies: [
         .target(name: "PubMaticAdapter"),
-        product(name: "PubMaticSDK", package: "PubMaticSDK"),
+        .product(name: "OpenWrapSDK", package: "OpenWrapSDK-Swift-Package"),
       ],
       path: "PubMaticAdapterTarget"
     ),
     .binaryTarget(
       name: "PubMaticAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-4.9.0.0.zip",
-      checksum: "13ee68174d33a57312838d3596ff9cf95e5b41e099ad32bb33ab113fe3a80c53"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-4.10.0.0.zip",
+      checksum: "134cfd30b30010c0c569ab8ca6e67c56fddc99ebd90cf077ad6161b18115522d"
     ),
   ]
 )
