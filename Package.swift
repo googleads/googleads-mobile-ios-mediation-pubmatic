@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git",
-      exact: "4.12.0"
+      exact: "5.0.0"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "PubMaticAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-4.12.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-5.0.0.0.zip",
       checksum: "e0fc190e3e9aed614f76e846e4c7a6fa4c9a804e5cb42220d150b8f9c4664dd6"
     ),
   ]
