@@ -49,7 +49,7 @@ let package = Package(
       name: "PubMaticAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-5.1.0.0.zip",
-      checksum: "38aa51fb440b8ef17f48280a79c90f28c79e954e02984215211a84605dc1ec0b"
+      checksum: "56ddb9c4a2e8e9e1c29923bc340b371d0c61d91ab32071bcb575e46f12e47b48"
     ),
   ]
 )
