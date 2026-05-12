@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "PubMaticAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-5.1.0.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/PubMatic/PubMaticAdapter-5.1.0.1.zip",
       checksum: "56ddb9c4a2e8e9e1c29923bc340b371d0c61d91ab32071bcb575e46f12e47b48"
     ),
   ]
